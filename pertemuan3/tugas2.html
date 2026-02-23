@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Tugas 2 Form Pendaftaran </title>
+        <meta charset="UTF-8"></meta>
+        <link rel="stylesheet" href="styles.css"></link>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <div>
+                <label>Nama: </label>
+                <input type="text" name="nama">
+                <br>
+                 <label>Email: </label>
+                 <input type="text" name="email">
+            </div>
+            <div>
+                <label for=""> Jenis Kelamin: </label>
+                <label><input type="radio" name="gender"
+                value="P"> Laki-laki </label>
+                <label><input type="radio" name="gender"
+                value="L"> Perempuan </label>
+            </div>
+            <div>
+                 <label for=""> Hobi: </label>
+                <label><input type="checkbox" name="hobi" value="musik"> Musik </label>
+                <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga </label>
+            </div>
+            <div>
+                <label for=""> Pilih Kota: </label>
+                <select name="pilihan">
+                    <option value="1">Jakarta</option>
+                    <option value="2">Karawang</option>
+                    <option value="3">Bekasi</option>
+                 </select>
+            </div>
+            <div>
+                <form action="upload.php" method="post"
+                 encrypte="multipart/form-data">
+                 <label for="file">Upload Foto: </label>
+                 <input type="file" id="file" name="file">
+                 <br>
+                 <button type="submit">Daftar</button>
+            </div>      
+        </form>
+
+    </body>
+</html>
