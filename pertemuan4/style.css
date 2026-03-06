@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #9c1328;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    background-color: #d73e3e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content{
+    flex: 2;
+    padding: 20px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.sidebar{
+    flex: 1;
+    padding: 20px;
+    background-color: #BDC3C7;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #14a3e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #2980B9;
+    transform: scale(1.1);
+}
+
+/*untuk hr/garis */
+hr{
+    margin: -5px 0;
+}
+
+/* label tetap di kiri */
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* input text */
+form input[type="text"],
+form input[type="password"],
+form select,
+form textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* radio dan checkbox */
+form input[type="radio"],
+form input[type="checkbox"]{
+    display: block;
+    margin-left: auto;
+    margin-right: 450px;
+    margin-bottom: 10px;
+}
+
+/* textarea */
+textarea{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* tombol kirim full */
+.btn{
+    width: 100%;
+    padding: 10px;
+}
