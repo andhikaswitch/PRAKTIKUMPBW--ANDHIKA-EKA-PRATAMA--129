@@ -28,20 +28,25 @@
         if (isset($_GET['page'])) {
             $halaman = $_GET['page'];
             
-            // Logika include sederhana
-            if ($halaman == '1') {
-                include 'soal1(switch-case).php';
-            } elseif ($halaman == '2') {
-                include 'soal2(for).php';
-            } elseif ($halaman == '3') {
-                include 'soal3(foreach).php';
-            } elseif ($halaman == '4') {
-                include 'soal4(ternary).php';
-            } else {
-                echo "Halaman tidak ditemukan.";
+            // Logika include menggunakan switch-case
+            switch ($halaman) {
+                case '1':
+                    include 'soal1(switch-case).php';
+                    break;
+                case '2':
+                    include 'soal2(for).php';
+                    break;
+                case '3':
+                    include 'soal3(foreach).php';
+                    break;
+                case '4':
+                    include 'soal4(ternary).php';
+                    break;
+                default:
+                    echo "Halaman tidak ditemukan.";
+                    break;
             }
         } else {
-            // Tampilan awal (default) jika belum ada link yang diklik
             echo "<h3>Selamat Datang!</h3>";
             echo "<p>Silakan klik menu navigasi di atas untuk melihat jawaban dari masing-masing soal.</p>";
         }
