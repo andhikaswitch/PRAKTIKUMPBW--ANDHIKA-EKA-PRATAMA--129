@@ -28,7 +28,7 @@
         if (isset($_GET['page'])) {
             $halaman = $_GET['page'];
             
-            // Logika include menggunakan switch-case
+            // Logika include 
             switch ($halaman) {
                 case '1':
                     include 'soal1(switch-case).php';
