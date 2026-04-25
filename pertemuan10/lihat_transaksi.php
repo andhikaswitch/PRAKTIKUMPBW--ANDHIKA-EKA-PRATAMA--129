@@ -1,6 +1,5 @@
 <?php
 include 'koneksi_db.php'; // Koneksi database
-
 // Query untuk menampilkan data pesanan beserta nama pelanggan dan total harga
 $query = "SELECT Pesanan.ID AS Pesanan_ID, Pelanggan.Nama AS Nama_Pelanggan, Pesanan.Tanggal_Pesanan,Pesanan.Total_Harga FROM Pesanan JOIN Pelanggan ON Pesanan.Pelanggan_ID = Pelanggan.ID";
 $result = $conn->query($query);
@@ -8,7 +7,6 @@ $result = $conn->query($query);
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

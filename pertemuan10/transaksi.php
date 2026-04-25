@@ -1,7 +1,6 @@
 <?php
 include 'koneksi_db.php';
 include 'nav.php';
-
 // Ambil daftar buku dan pelanggan
 $buku_result = $conn->query("SELECT ID, Judul FROM buku");
 $pelanggan_result = $conn->query("SELECT ID, Nama FROM pelanggan");

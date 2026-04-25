@@ -65,7 +65,6 @@ $row = $result->fetch_assoc();
 
                 <input type="number" class="form-control" id="stok" name="stok" value="<?= $row['stok'] ?>" required>
             </div>
-
             <button type="submit" class="btn btn-success">Simpan Perubahan</button>
         </form>
     </div>

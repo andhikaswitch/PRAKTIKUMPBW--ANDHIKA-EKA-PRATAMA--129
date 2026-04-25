@@ -16,7 +16,6 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             addslashes($stmt->error) . "'); window.location='index.php';</script>";
     }
 
-    
         // Tutup statement
         $stmt->close();
     } else {

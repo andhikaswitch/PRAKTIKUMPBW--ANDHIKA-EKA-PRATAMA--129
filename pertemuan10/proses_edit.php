@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id
     );
 
-    
     if ($stmt->execute()) {
         echo "<script>alert('Data berhasil diperbarui'); window.location='index.php';</script>";
     } else {

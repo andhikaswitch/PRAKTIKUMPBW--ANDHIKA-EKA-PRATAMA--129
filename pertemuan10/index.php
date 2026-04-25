@@ -39,7 +39,6 @@
 
             </div>
         </form>
-
         <!-- Tabel Daftar Buku -->
         <table class="table table-striped">
             <thead>
