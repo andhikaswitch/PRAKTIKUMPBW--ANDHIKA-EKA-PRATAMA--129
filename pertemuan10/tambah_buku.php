@@ -9,8 +9,7 @@
         scale=1.0">
 
         <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bo
-        otstrap.min.css" rel="stylesheet">
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <title>Tambah Buku</title>
     </head>
     <body>
@@ -57,10 +56,9 @@
                 <input type="number" class="form-control"
                 id="stok" name="stok" required>
             </div>
-        <button type="submit" class="btn btn-
-        primary">Tambah Buku</button>
+        <button type="submit" class="btn btn-primary">Tambah Buku</button>
         </form>
-        
+
         </div>
     </body>
 </html>
